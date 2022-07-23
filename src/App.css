@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #F9F9F9 0% 0% no-repeat padding-box;
+}
+
+.container {
+  border: none;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 632px;
+  margin-top: 147px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #ffff;
+}
+
+.top-profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 48px;
+  position: relative;
+}
+
+.percentage-wrapper {
+  position: absolute;
+  top: 155px;
+  left: 300px;
+  font-size: 24px;
+}
+
+img {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+}
+
+.circle {
+  width: 270px;
+}
+
+.profile-form {
+  padding: 2.5rem;
+}
+
+.line {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.line > .output {
+  font-size: 16px;
+  line-height: 19px;
+  padding: 20px 24px 21px;
+  margin: 0.5rem;
+  width: 100%;
+  border-radius: 15px;
+  background: #F1F2F6 0% 0% no-repeat padding-box;
+  color: #222222;
+  border: none;
+}
+
+.line > .hsnr {
+  width: 122px;
+}
+
+.line > .plz {
+  width: 208px;
+}
+
+
+/* Input Styling */
+.line>input {
+  font-size: 16px;
+  line-height: 19px;
+  padding: 20px 24px 21px;
+  margin: 0.5rem;
+  width: 100%;
+  border-radius: 15px;
+  background: #F1F2F6 0% 0% no-repeat padding-box;
+  color: #222222;
+  border: none;
+}
+
+input.hsnr {
+  width: 122px;
+}
+
+input.plz {
+  width: 208px;
+}
+
+
+/* Button Styling */
+btn {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+button {
+  width: 98%;
+  border-radius: 15px;
+  border: none;
+  margin: 0.5rem;
+  background: transparent linear-gradient(263deg, #B9B9B9 0%, #9F9F9F 100%) 0% 0% no-repeat padding-box;
+  color: #ffff;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 20px 24px 21px;
+  cursor: pointer;
+}
+
+/* Responsive Screen */
+@media only screen and (max-width: 700px) {
+  
+}
