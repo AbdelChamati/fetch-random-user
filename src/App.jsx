@@ -20,6 +20,7 @@ function App() {
   });
 
   const generateUser = async () => {
+    // Circular Progress Bar
     setLoading(true);
 
     let currentPercentage = 0;
@@ -35,6 +36,7 @@ function App() {
       }
     }, 100);
 
+    // Fetch Data from https://randomuser.me/api/
     axios
       .get("https://randomuser.me/api/")
       .then((response) => {
@@ -47,23 +49,22 @@ function App() {
       });
   };
 
+  // Bearbeiten USER
   const editUser = (e) => {
     e.preventDefault();
     setEdit(true);
   };
 
+  /* Local Storage */
   const createUser = (e) => {
     e.preventDefault();
     localStorage.setItem("user", JSON.stringify(data));
     setData({});
   };
 
- 
-
   const handleChange = (e) => {
-
     // Destructuring
-    const {name, value} = e.target;
+    const { name, value } = e.target;
     // const name = e.target.name;
     // const value = e.target.value;
 
@@ -74,11 +75,9 @@ function App() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("You Clicked Generate User!");
+    console.log("You are Generating a New User!");
     console.log(details);
   };
-
-  
 
   const renderOutput = () => {
     return (
@@ -227,7 +226,6 @@ function App() {
                 <button
                   style={{ width: "calc(50% - 1rem)" }}
                   onClick={createUser}
-                  
                 >
                   Erstellen
                 </button>
